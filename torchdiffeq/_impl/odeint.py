@@ -7,6 +7,7 @@ from .fehlberg2 import Fehlberg2
 from .fixed_grid import Euler, Midpoint, RK4
 from .fixed_adams import AdamsBashforth, AdamsBashforthMoulton
 from .dopri8 import Dopri8Solver
+from .gear2 import Gear2
 from .scipy_wrapper import ScipyWrapperODESolver
 from .misc import _check_inputs, _flat_to_shape
 
@@ -23,6 +24,7 @@ SOLVERS = {
     'implicit_adams': AdamsBashforthMoulton,
     # Backward compatibility: use the same name as before
     'fixed_adams': AdamsBashforthMoulton,
+    'gear2': Gear2,
     # ~Backwards compatibility
     'scipy_solver': ScipyWrapperODESolver,
 }
