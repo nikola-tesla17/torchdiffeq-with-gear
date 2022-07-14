@@ -60,7 +60,8 @@ FIXED_METHODS = ('euler', 'midpoint', 'rk4', 'explicit_adams', 'implicit_adams')
 ADAMS_METHODS = ('explicit_adams', 'implicit_adams')
 ADAPTIVE_METHODS = ('adaptive_heun', 'fehlberg2', 'bosh3', 'dopri5', 'dopri8')
 SCIPY_METHODS = ('scipy_solver',)
-METHODS = FIXED_METHODS + ADAPTIVE_METHODS + SCIPY_METHODS
+STIFF_METHODS = ('gear2',)
+METHODS = FIXED_METHODS + ADAPTIVE_METHODS + SCIPY_METHODS + STIFF_METHODS
 
 
 def construct_problem(device, npts=10, ode='constant', reverse=False, dtype=torch.float64):
