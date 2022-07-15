@@ -1,6 +1,6 @@
 import unittest
 import torch
-import torchdiffeq
+import torchdiffeq_with_gear
 
 from problems import construct_problem, DTYPES, DEVICES, ADAPTIVE_METHODS
 
