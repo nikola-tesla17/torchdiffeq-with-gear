@@ -1,7 +1,7 @@
 import unittest
 import torch
 import sys, os
-sys.path.append(os.path.abspath(os.path.join('..', 'torchdiffeq')))
+sys.path.append(os.path.abspath('..'))
 import torchdiffeq
 
 from problems import construct_problem, DTYPES, DEVICES, ADAPTIVE_METHODS
