@@ -10,7 +10,7 @@ _GEAR2_COEFFICIENTS = [[2, 1, 0]]
 _DIVISOR = [3]
 _GEAR2_DIVISOR = [torch.tensor([g / divisor for g in gear], dtype=torch.float64)
                     for gear, divisor in zip(_GEAR2_COEFFICIENTS, _DIVISOR)]
-_MAX_ITERS = 40
+_MAX_ITERS = 4
 
 
 def _dot_product(x, y):
