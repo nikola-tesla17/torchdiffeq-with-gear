@@ -6,7 +6,7 @@ from .solvers import FixedGridODESolver
 from .misc import _compute_error_ratio, _linf_norm
 from .misc import Perturb
 
-_GEAR2_COEFFICIENTS = [2, 1, 0]
+_GEAR2_COEFFICIENTS = [[2, 1, 0]]
 _DIVISOR = [3]
 _GEAR2_DIVISOR = [torch.tensor([g / divisor for g in gear], dtype=torch.float64)
                     for gear, divisor in zip(_GEAR2_COEFFICIENTS, _DIVISOR)]
