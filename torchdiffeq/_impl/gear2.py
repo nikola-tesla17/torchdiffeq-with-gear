@@ -40,7 +40,7 @@ class Gear2(FixedGridODESolver):
         f0 = func(t0, y0, perturb=Perturb.NEXT if self.perturb else Perturb.NONE)
         self._update_history(t0, f0)
         order = 2
-        gear_coeffs = self.gear2[2]
+        gear_coeffs = self.gear2[0]
         dy = _dot_product(dt, self.prev_f).type_as(y0)  
         delta = dt * _dot_product(gear_coeffs[1:], self.prev_f).type_as(y0) 
         converged = False
