@@ -1,6 +1,8 @@
 import unittest
 import torch
-from .. import torchdiffeq
+import sys, os
+sys.path.append(os.path.abspath(os.path.join('..', 'torchdiffeq')))
+import torchdiffeq
 
 from problems import construct_problem, DTYPES, DEVICES, ADAPTIVE_METHODS
 
