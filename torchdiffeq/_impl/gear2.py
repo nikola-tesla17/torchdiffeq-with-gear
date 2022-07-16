@@ -55,4 +55,4 @@ class Gear2(FixedGridODESolver):
             warnings.warn('Functional iteration did not converge. Solution may be incorrect.')
             self.prev_f.pop()
         self._update_history(t0, f)
-    return dy, f0
+        return dy, f0
