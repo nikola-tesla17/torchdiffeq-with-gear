@@ -42,7 +42,7 @@ class Gear2(FixedGridODESolver):
         order = 2
         gear_coeffs = self.gear2[0]
         dy = _dot_product(dt, self.prev_f).type_as(y0)  
-        delta = dt * _dot_product(gear_coeffs[0], self.prev_f).type_as(y0) 
+        delta = dt * _dot_product(gear_coeffs[0:], self.prev_f).type_as(y0) 
         converged = False
         for _ in range(self.max_iters):
             dy_old = dy
